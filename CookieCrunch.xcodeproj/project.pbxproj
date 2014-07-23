@@ -25,6 +25,7 @@
 		757E90AD197F7022004D11EC /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 757E90A8197F7022004D11EC /* Level_4.json */; };
 		757E90AF197F7096004D11EC /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757E90AE197F7096004D11EC /* Tile.swift */; };
 		757E90B1197F70B5004D11EC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757E90B0197F70B5004D11EC /* Extensions.swift */; };
+		757E90B3197F7352004D11EC /* Swap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757E90B2197F7352004D11EC /* Swap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		757E90A8197F7022004D11EC /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
 		757E90AE197F7096004D11EC /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tile.swift; path = CookieCrunch/Tile.swift; sourceTree = SOURCE_ROOT; };
 		757E90B0197F70B5004D11EC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		757E90B2197F7352004D11EC /* Swap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				756EE62E197F6439006AEA1C /* AppDelegate.swift */,
 				756EE632197F6439006AEA1C /* GameScene.swift */,
+				757E90B2197F7352004D11EC /* Swap.swift */,
 				756EE634197F6439006AEA1C /* GameViewController.swift */,
 				757E90A1197F6DA3004D11EC /* Level.swift */,
 				757E90B0197F70B5004D11EC /* Extensions.swift */,
@@ -266,6 +269,7 @@
 				757E90B1197F70B5004D11EC /* Extensions.swift in Sources */,
 				757E90A2197F6DA3004D11EC /* Level.swift in Sources */,
 				757E909C197F6ACB004D11EC /* Cookie.swift in Sources */,
+				757E90B3197F7352004D11EC /* Swap.swift in Sources */,
 				757E90AF197F7096004D11EC /* Tile.swift in Sources */,
 				757E90A0197F6C03004D11EC /* Set.swift in Sources */,
 				756EE635197F6439006AEA1C /* GameViewController.swift in Sources */,
