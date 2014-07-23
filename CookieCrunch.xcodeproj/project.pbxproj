@@ -32,6 +32,7 @@
 		757E90BE197F77CA004D11EC /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = 757E90B8197F77CA004D11EC /* Ka-Ching.wav */; };
 		757E90BF197F77CA004D11EC /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 757E90B9197F77CA004D11EC /* Mining by Moonlight.mp3 */; };
 		757E90C0197F77CA004D11EC /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = 757E90BA197F77CA004D11EC /* Scrape.wav */; };
+		757E90C2197F785E004D11EC /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757E90C1197F785E004D11EC /* Chain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		757E90B8197F77CA004D11EC /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
 		757E90B9197F77CA004D11EC /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
 		757E90BA197F77CA004D11EC /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
+		757E90C1197F785E004D11EC /* Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			children = (
 				756EE62E197F6439006AEA1C /* AppDelegate.swift */,
 				756EE632197F6439006AEA1C /* GameScene.swift */,
+				757E90C1197F785E004D11EC /* Chain.swift */,
 				757E90B2197F7352004D11EC /* Swap.swift */,
 				756EE634197F6439006AEA1C /* GameViewController.swift */,
 				757E90A1197F6DA3004D11EC /* Level.swift */,
@@ -300,6 +303,7 @@
 				756EE633197F6439006AEA1C /* GameScene.swift in Sources */,
 				757E90B1197F70B5004D11EC /* Extensions.swift in Sources */,
 				757E90A2197F6DA3004D11EC /* Level.swift in Sources */,
+				757E90C2197F785E004D11EC /* Chain.swift in Sources */,
 				757E909C197F6ACB004D11EC /* Cookie.swift in Sources */,
 				757E90B3197F7352004D11EC /* Swap.swift in Sources */,
 				757E90AF197F7096004D11EC /* Tile.swift in Sources */,
