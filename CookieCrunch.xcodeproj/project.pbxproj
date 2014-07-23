@@ -18,6 +18,11 @@
 		757E909E197F6BC4004D11EC /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757E909D197F6BC4004D11EC /* Array2D.swift */; };
 		757E90A0197F6C03004D11EC /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757E909F197F6C03004D11EC /* Set.swift */; };
 		757E90A2197F6DA3004D11EC /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757E90A1197F6DA3004D11EC /* Level.swift */; };
+		757E90A9197F7022004D11EC /* Level_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 757E90A4197F7022004D11EC /* Level_0.json */; };
+		757E90AA197F7022004D11EC /* Level_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 757E90A5197F7022004D11EC /* Level_1.json */; };
+		757E90AB197F7022004D11EC /* Level_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 757E90A6197F7022004D11EC /* Level_2.json */; };
+		757E90AC197F7022004D11EC /* Level_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 757E90A7197F7022004D11EC /* Level_3.json */; };
+		757E90AD197F7022004D11EC /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 757E90A8197F7022004D11EC /* Level_4.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		757E909D197F6BC4004D11EC /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
 		757E909F197F6C03004D11EC /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 		757E90A1197F6DA3004D11EC /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		757E90A4197F7022004D11EC /* Level_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_0.json; sourceTree = "<group>"; };
+		757E90A5197F7022004D11EC /* Level_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_1.json; sourceTree = "<group>"; };
+		757E90A6197F7022004D11EC /* Level_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_2.json; sourceTree = "<group>"; };
+		757E90A7197F7022004D11EC /* Level_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_3.json; sourceTree = "<group>"; };
+		757E90A8197F7022004D11EC /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,7 @@
 				756EE636197F6439006AEA1C /* Main.storyboard */,
 				756EE639197F6439006AEA1C /* Images.xcassets */,
 				756EE64F197F6464006AEA1C /* Sprites.atlas */,
+				757E90A3197F7022004D11EC /* Levels */,
 				756EE62C197F6439006AEA1C /* Supporting Files */,
 			);
 			path = CookieCrunch;
@@ -125,6 +136,19 @@
 				756EE644197F6439006AEA1C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		757E90A3197F7022004D11EC /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				757E90A4197F7022004D11EC /* Level_0.json */,
+				757E90A5197F7022004D11EC /* Level_1.json */,
+				757E90A6197F7022004D11EC /* Level_2.json */,
+				757E90A7197F7022004D11EC /* Level_3.json */,
+				757E90A8197F7022004D11EC /* Level_4.json */,
+			);
+			name = Levels;
+			path = ../Levels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,8 +232,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				756EE63A197F6439006AEA1C /* Images.xcassets in Resources */,
+				757E90AB197F7022004D11EC /* Level_2.json in Resources */,
+				757E90AC197F7022004D11EC /* Level_3.json in Resources */,
+				757E90AA197F7022004D11EC /* Level_1.json in Resources */,
 				756EE650197F6464006AEA1C /* Sprites.atlas in Resources */,
 				756EE638197F6439006AEA1C /* Main.storyboard in Resources */,
+				757E90A9197F7022004D11EC /* Level_0.json in Resources */,
+				757E90AD197F7022004D11EC /* Level_4.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
