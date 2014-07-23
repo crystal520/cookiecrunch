@@ -53,6 +53,11 @@ class GameViewController: UIViewController {
         shuffle()
     }
     
+    func decrementMoves() {
+        --movesLeft
+        updateLabels()
+    }
+    
     func updateLabels() {
         targetLabel.text = NSString(format: "%ld", level.targetScore)
         movesLabel.text = NSString(format: "%ld", movesLeft)
@@ -83,6 +88,7 @@ class GameViewController: UIViewController {
     func beginNextTurn() {
         level.detectPossibleSwaps()
         view.userInteractionEnabled = true
+        decrementMoves()
     }
     
     func shuffle() {
