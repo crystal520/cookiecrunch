@@ -33,6 +33,7 @@ class GameScene: SKScene {
         let background = SKSpriteNode(imageNamed: "Background")
         addChild(background)
         addChild(gameLayer)
+        gameLayer.hidden = true
         
         let layerPosition = CGPoint(
             x: -TileWidth * CGFloat(NumColumns) / 2,
@@ -107,6 +108,20 @@ class GameScene: SKScene {
         } else {
             return (false, 0, 0)  // invalid location
         }
+    }
+    
+    func animateGameOver(completion: () -> ()) {
+        let action = SKAction.moveBy(CGVector(dx: 0, dy: -size.height), duration: 0.3)
+        action.timingMode = .EaseIn
+        gameLayer.runAction(action, completion: completion)
+    }
+    
+    func animateBeginGame(completion: () -> ()) {
+        gameLayer.hidden = false
+        gameLayer.position = CGPoint(x: 0, y: size.height)
+        let action = SKAction.moveBy(CGVector(dx: 0, dy: -size.height), duration: 0.3)
+        action.timingMode = .EaseOut
+        gameLayer.runAction(action, completion: completion)
     }
     
     override func touchesMoved(touches: NSSet!, withEvent event: UIEvent!) {
