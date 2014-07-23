@@ -1,5 +1,6 @@
 import UIKit
 import SpriteKit
+import AVFoundation
 
 class GameViewController: UIViewController {
     var scene: GameScene!
@@ -8,6 +9,8 @@ class GameViewController: UIViewController {
     
     var movesLeft: Int = 0
     var score: Int = 0
+    
+    var backgroundMusic: AVAudioPlayer!
     
     @IBOutlet var targetLabel: UILabel!
     @IBOutlet var movesLabel: UILabel!
@@ -55,6 +58,11 @@ class GameViewController: UIViewController {
         gameOverPanel.hidden = true
         // Present the scene.
         skView.presentScene(scene)
+        // Load and start background music.
+        let url = NSBundle.mainBundle().URLForResource("Mining by Moonlight", withExtension: "mp3")
+        backgroundMusic = AVAudioPlayer(contentsOfURL: url, error: nil)
+        backgroundMusic.numberOfLoops = -1
+        backgroundMusic.play()
         beginGame()
     }
     
