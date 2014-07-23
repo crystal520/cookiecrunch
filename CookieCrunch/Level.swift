@@ -13,6 +13,8 @@ class Level {
     let targetScore: Int!
     let maximumMoves: Int!
     
+    var comboMultiplier: Int = 0  // private
+    
     func tileAtColumn(column: Int, row: Int) -> Tile? {
         assert(column >= 0 && column < NumColumns)
         assert(row >= 0 && row < NumRows)
@@ -296,12 +298,18 @@ class Level {
         }
     }
     
+    func resetComboMultiplier() {
+        comboMultiplier = 1
+    }
+    
     func calculateScores(chains: Set<Chain>) {
         // 3-chain is 60 pts, 4-chain is 120, 5-chain is 180, and so on
         for chain in chains {
-            chain.score = 60 * (chain.length - 2)
+            chain.score = 60 * (chain.length - 2) * comboMultiplier
+            ++comboMultiplier
         }
     }
+
 
     
     init(filename: String) {
