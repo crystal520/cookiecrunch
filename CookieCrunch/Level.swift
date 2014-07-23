@@ -10,6 +10,9 @@ class Level {
     
     let tiles = Array2D<Tile>(columns: NumColumns, rows: NumRows)  // private
     
+    let targetScore: Int!
+    let maximumMoves: Int!
+    
     func tileAtColumn(column: Int, row: Int) -> Tile? {
         assert(column >= 0 && column < NumColumns)
         assert(row >= 0 && row < NumRows)
@@ -306,6 +309,8 @@ class Level {
                         }
                     }
                 }
+                targetScore = (dictionary["targetScore"] as NSNumber).integerValue
+                maximumMoves = (dictionary["moves"] as NSNumber).integerValue
             }
         }
     }
