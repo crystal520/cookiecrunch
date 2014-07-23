@@ -58,6 +58,7 @@
 		757E90F5197F7E71004D11EC /* SugarCookie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 757E90DB197F7E71004D11EC /* SugarCookie@2x.png */; };
 		757E90F6197F7E71004D11EC /* Tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 757E90DC197F7E71004D11EC /* Tile.png */; };
 		757E90F7197F7E71004D11EC /* Tile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 757E90DD197F7E71004D11EC /* Tile@2x.png */; };
+		757E90F9197F87B4004D11EC /* Grid.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 757E90F8197F87B4004D11EC /* Grid.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,7 @@
 		757E90DB197F7E71004D11EC /* SugarCookie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SugarCookie@2x.png"; sourceTree = "<group>"; };
 		757E90DC197F7E71004D11EC /* Tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tile.png; sourceTree = "<group>"; };
 		757E90DD197F7E71004D11EC /* Tile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tile@2x.png"; sourceTree = "<group>"; };
+		757E90F8197F87B4004D11EC /* Grid.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Grid.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				757E909F197F6C03004D11EC /* Set.swift */,
 				756EE636197F6439006AEA1C /* Main.storyboard */,
 				756EE639197F6439006AEA1C /* Images.xcassets */,
+				757E90F8197F87B4004D11EC /* Grid.atlas */,
 				757E90C3197F7E71004D11EC /* Sprites */,
 				757E90B4197F77CA004D11EC /* Sounds */,
 				757E90A3197F7022004D11EC /* Levels */,
@@ -355,6 +358,7 @@
 				757E90ED197F7E71004D11EC /* Donut@2x.png in Resources */,
 				757E90E9197F7E71004D11EC /* Danish@2x.png in Resources */,
 				757E90F3197F7E71004D11EC /* SugarCookie-Highlighted@2x.png in Resources */,
+				757E90F9197F87B4004D11EC /* Grid.atlas in Resources */,
 				757E90E2197F7E71004D11EC /* Cupcake-Highlighted.png in Resources */,
 				757E90F1197F7E71004D11EC /* Macaroon@2x.png in Resources */,
 				756EE63A197F6439006AEA1C /* Images.xcassets in Resources */,
