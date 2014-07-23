@@ -16,6 +16,8 @@ class GameScene: SKScene {
     
     let tilesLayer = SKNode()
     
+    var selectionSprite = SKSpriteNode()
+    
     init(size: CGSize) {
         super.init(size: size)
         
@@ -37,6 +39,27 @@ class GameScene: SKScene {
         swipeFromRow = nil
     }
     
+    func hideSelectionIndicator() {
+        selectionSprite.runAction(SKAction.sequence([
+            SKAction.fadeOutWithDuration(0.3),
+            SKAction.removeFromParent()]))
+    }
+    
+    func showSelectionIndicatorForCookie(cookie: Cookie) {
+        if selectionSprite.parent != nil {
+            selectionSprite.removeFromParent()
+        }
+        
+        if let sprite = cookie.sprite {
+            let texture = SKTexture(imageNamed: cookie.cookieType.highlightedSpriteName)
+            selectionSprite.size = texture.size()
+            selectionSprite.runAction(SKAction.setTexture(texture))
+            
+            sprite.addChild(selectionSprite)
+            selectionSprite.alpha = 1.0
+        }
+    }
+    
     override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!) {
         // 1
         let touch = touches.anyObject() as UITouch
@@ -46,6 +69,7 @@ class GameScene: SKScene {
         if success {
             // 3
             if let cookie = level.cookieAtColumn(column, row: row) {
+                showSelectionIndicatorForCookie(cookie)
                 // 4
                 swipeFromColumn = column
                 swipeFromRow = row
@@ -103,6 +127,7 @@ class GameScene: SKScene {
             // 4
             if horzDelta != 0 || vertDelta != 0 {
                 trySwapHorizontal(horzDelta, vertical: vertDelta)
+                hideSelectionIndicator()
                 
                 // 5
                 swipeFromColumn = nil
@@ -149,6 +174,9 @@ class GameScene: SKScene {
     }
     
     override func touchesEnded(touches: NSSet!, withEvent event: UIEvent!) {
+        if selectionSprite.parent != nil && swipeFromColumn != nil {
+            hideSelectionIndicator()
+        }
         swipeFromColumn = nil
         swipeFromRow = nil
     }
