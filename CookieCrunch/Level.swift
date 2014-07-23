@@ -148,6 +148,10 @@ class Level {
         swap.cookieA.row = rowB
     }
     
+    func isPossibleSwap(swap: Swap) -> Bool {
+        return possibleSwaps.containsElement(swap)
+    }
+    
     init(filename: String) {
         // 1
         if let dictionary = Dictionary<String, AnyObject>.loadJSONFromBundle(filename) {
