@@ -48,6 +48,10 @@ class GameScene: SKScene {
         SKLabelNode(fontNamed: "GillSans-BoldItalic")
     }
     
+    func removeAllCookieSprites() {
+        cookiesLayer.removeAllChildren()
+    }
+    
     func hideSelectionIndicator() {
         selectionSprite.runAction(SKAction.sequence([
             SKAction.fadeOutWithDuration(0.3),

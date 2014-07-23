@@ -125,6 +125,7 @@ class GameViewController: UIViewController {
     }
     
     func shuffle() {
+        scene.removeAllCookieSprites()
         let newCookies = level.shuffle()
         scene.addSpritesForCookies(newCookies)
     }
