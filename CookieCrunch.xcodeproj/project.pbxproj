@@ -14,6 +14,9 @@
 		756EE63A197F6439006AEA1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756EE639197F6439006AEA1C /* Images.xcassets */; };
 		756EE646197F6439006AEA1C /* CookieCrunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EE645197F6439006AEA1C /* CookieCrunchTests.swift */; };
 		756EE650197F6464006AEA1C /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 756EE64F197F6464006AEA1C /* Sprites.atlas */; };
+		757E909C197F6ACB004D11EC /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757E909B197F6ACB004D11EC /* Cookie.swift */; };
+		757E909E197F6BC4004D11EC /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757E909D197F6BC4004D11EC /* Array2D.swift */; };
+		757E90A0197F6C03004D11EC /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757E909F197F6C03004D11EC /* Set.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		756EE644197F6439006AEA1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		756EE645197F6439006AEA1C /* CookieCrunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieCrunchTests.swift; sourceTree = "<group>"; };
 		756EE64F197F6464006AEA1C /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Sprites.atlas; path = ../Sprites.atlas; sourceTree = "<group>"; };
+		757E909B197F6ACB004D11EC /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
+		757E909D197F6BC4004D11EC /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		757E909F197F6C03004D11EC /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,9 @@
 				756EE62E197F6439006AEA1C /* AppDelegate.swift */,
 				756EE632197F6439006AEA1C /* GameScene.swift */,
 				756EE634197F6439006AEA1C /* GameViewController.swift */,
+				757E909B197F6ACB004D11EC /* Cookie.swift */,
+				757E909D197F6BC4004D11EC /* Array2D.swift */,
+				757E909F197F6C03004D11EC /* Set.swift */,
 				756EE636197F6439006AEA1C /* Main.storyboard */,
 				756EE639197F6439006AEA1C /* Images.xcassets */,
 				756EE64F197F6464006AEA1C /* Sprites.atlas */,
@@ -216,8 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				756EE633197F6439006AEA1C /* GameScene.swift in Sources */,
+				757E909C197F6ACB004D11EC /* Cookie.swift in Sources */,
+				757E90A0197F6C03004D11EC /* Set.swift in Sources */,
 				756EE635197F6439006AEA1C /* GameViewController.swift in Sources */,
 				756EE62F197F6439006AEA1C /* AppDelegate.swift in Sources */,
+				757E909E197F6BC4004D11EC /* Array2D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
